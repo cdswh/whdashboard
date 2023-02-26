@@ -6,11 +6,6 @@ import pickle
 import streamlit_authenticator as stauth
 from pathlib import Path
 
-# from streamlit_lottie import st_lottie
-# import json
-# import requests
-
-
 ssl._create_default_https_context = ssl._create_unverified_context
 
 st.set_page_config(layout="wide")
@@ -22,16 +17,6 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-# def load_lottiefile(filepath: str):
-#    with open(filepath, "r") as f:
-#        return json.load(f)
-
-# def load_lottieurl(url: str):
-#    r = requests.get(url)
-#    if r.status_code != 200:
-#        return None
-#    return r.json()
 
 # --- USER AUTHENTICATION ---
 names = ["Paul Vergara", "Jesus Lopez", "Kristen Hale", "Josh Santana"]
